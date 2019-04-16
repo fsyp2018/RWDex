@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;    
+}
+.header{
+    background-image: url('../img/header_desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1024px;
+    height: 420px;       
+}
+.top{
+    height: 56px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center; 
+    background: rgba(0,0,0,0.75);     
+}
+.logo{    
+    margin-left: 42px;    
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight:900;
+}
+.menu-pc{
+    margin-right: 48px;
+}
+.menu-pc a{
+    margin-right: 30px;
+    text-decoration:none;    
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.slogan{
+    margin: 67px auto 142px auto;
+    background: rgba(0,0,0,0.35);
+    width: 460px;
+    height: 152px;          
+    text-align: center;
+    padding-top: 20px;  
+}
+.slogan h1{  
+    font-size: 36px;
+    color: #FFFFFF;
+    padding-bottom: 16px;    
+}
+.slogan h2{        
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;    
+}
+.content{
+    text-align: center;
+}
+.question{
+	margin: 50px auto 31px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	max-width: 70%;
+}
+.question h2{    
+    font-size: 20px;
+    color: #3D1101;
+    line-height: 32px;
+}
+.question::before,.question::after{
+	flex-grow: 1;
+	max-width: 100px;
+	content: "";
+	border-top: 1px solid #3d1101;
+}
+.footer{    
+    background: rgba(250,250,250,0.70);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    width: 299px;
+}
+.about h2{
+    font-size: 24px;
+    color: #3D1101;
+    margin-bottom: 16px;
+}
+.about p{
+    font-size: 16px;
+    color: #3D1101;
+}
+.connection{
+    width: 299px;
+}
+.connection h2{
+    font-size: 24px;
+    color: #3D1101;
+    margin-bottom: 16px;
+}
+.connection p{
+    font-size: 16px;
+    color: #3D1101;
+}
+.footerlogo{
+    width: 245px;
+    margin-right: 42px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+}
+.footerlogo h1{
+    font-size: 49px;
+    color: #3D1101;
+    letter-spacing: -1px;
+    font-weight:bold;
+    margin-bottom: 22px;
+}
+.footerlogo img{    
+    width: 31px;
+    height: 36px;
+    margin-left: 12px;    
+}
