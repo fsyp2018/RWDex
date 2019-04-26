@@ -179,14 +179,44 @@ table {
     font-size: 24px;
     margin:50px auto 32px auto;
 }
-.assess{
-    display:flex;
+.assess ul{
+    display: flex;
     flex-wrap:wrap;
-    justify-content:space-between;  
+	justify-content: space-between;
+	padding: 0 42px;
 }
-.assess img{
+.assess li{
+    max-width: 32%;
+    display: flex;    
+    align-items: flex-start;
+}
+.assess img{    
     border-radius: 67px;
     max-width: 100%;
+    margin-right: 13px;
+}
+.assess div{
+    text-align: left;   
+   
+}
+.assess h2{    
+    line-height: 67px;
+}
+.assess p{    
+    line-height: 24px;
+}
+.assess span{    
+    line-height: 36px;
+    display: flex;    
+    justify-content: flex-end; 
+}
+.openmap{
+    color: #3D1101;
+}
+.maptitle{
+    font-size: 24px;
+    margin:50px auto 38px auto;
+    line-height: 1.5;
 }
 .footer{    
     background: rgba(250, 250, 250, 0.377);
