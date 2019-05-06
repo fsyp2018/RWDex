@@ -152,7 +152,12 @@ table {
     
 }
 .chefphoto{
-    margin-left: 42px;            
+    margin-left: 42px;  
+    background-image: url(../img/main_chef_brown.png);    
+    width: 470px;      
+    height: 460px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .chefphoto img{
     max-width: 100%;
@@ -223,23 +228,25 @@ table {
 }
 .mapbooking{
     display: flex;
-    justify-content:flex-start;
-    flex-wrap:wrap;
+    justify-content:center;
+    flex-wrap:nowrap;    
 }
 .map{    
-  	
+      background-image: url(../img/Map.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 462px;
+      height: 388px;
 }
-.booking{
-    display: flex;
-    justify-content:flex-start;
+.booking{ 
     margin-left: 20px;
     text-align: left;
     font-size: 14px;
     line-height: 1.5;
-    max-width: 572px; 
+    width: 470px;
 }
 .booking form{
-    width: 500px;
+    max-width: 470px;
 }
 .booking input{
     width: 100%;
@@ -253,20 +260,20 @@ table {
     max-width: 14px;
     max-height: 14px;    	
 }
-.buttomstyle{
+.buttonstyle{
     display:flex;
     justify-content:flex-end;
     margin-top: 60px;
     width: 100%;
 }
-.booking .buttom{    	
+.booking .button{    	
 	margin-left: 11px;    
     max-width: 70px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.35);
     text-align: center;
 }
-.booking .buttom:hover{
+.booking .button:hover{
     background-color: #f56c32;
 }
 .footer{    
