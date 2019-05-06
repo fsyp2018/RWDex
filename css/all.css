@@ -48,7 +48,8 @@ table {
 }
 .wrap{
     max-width: 1024px;
-    margin: 0 auto;    
+    margin: 0 auto;
+    background: rgb(245, 224, 224);    
 }
 .header{
     background-image: url('../img/header_desktop.png');
@@ -151,8 +152,7 @@ table {
     
 }
 .chefphoto{
-    margin-left: 42px;
-    
+    margin-left: 42px;            
 }
 .chefphoto img{
     max-width: 100%;
@@ -173,11 +173,13 @@ table {
 }
 .openassess{
     color: #3D1101;
+    background: rgba(250, 250, 250, 0.377);
 }
 .assesstitle{
     text-align: center;
     font-size: 24px;
-    margin:50px auto 32px auto;
+    margin:0px auto 32px auto;
+    padding-top: 50px;
 }
 .assess ul{
     display: flex;
@@ -212,11 +214,60 @@ table {
 }
 .openmap{
     color: #3D1101;
+    margin-bottom: 50px;
 }
 .maptitle{
     font-size: 24px;
     margin:50px auto 38px auto;
     line-height: 1.5;
+}
+.mapbooking{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+}
+.map{    
+  	
+}
+.booking{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 572px; 
+}
+.booking form{
+    width: 500px;
+}
+.booking input{
+    width: 100%;
+	margin-bottom: 6px;	
+	height:32px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	padding: 0 14px;
+}
+.booking .radio{
+    max-width: 14px;
+    max-height: 14px;    	
+}
+.buttomstyle{
+    display:flex;
+    justify-content:flex-end;
+    margin-top: 60px;
+    width: 100%;
+}
+.booking .buttom{    	
+	margin-left: 11px;    
+    max-width: 70px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+.booking .buttom:hover{
+    background-color: #f56c32;
 }
 .footer{    
     background: rgba(250, 250, 250, 0.377);
