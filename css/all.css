@@ -53,10 +53,17 @@ table {
 }
 .header{
     background-image: url('../img/header_desktop.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     max-width: 1024px;
-    height: 420px;       
+    height: 420px;
+    margin-bottom: 50px;       
+}
+@media (max-width: 767px){
+	.header{		
+		background-size: auto;
+		background-position: center;		
+	}
 }
 .top{
     height: 56px;
@@ -80,9 +87,13 @@ table {
     text-decoration:none;    
     font-size: 16px;
     color: #FFFFFF;
+    padding-bottom: 15px;
+}
+.menu-pc a:hover{
+    border-bottom: 3px solid #efe9e7;    
 }
 .slogan{
-    margin: 67px auto 142px auto;
+    margin: 67px auto 0px auto;
     background: rgba(0,0,0,0.35);
     max-width: 460px;
     height: 152px;          
@@ -98,6 +109,11 @@ table {
     font-size: 16px;
     color: #FFFFFF;
     line-height: 24px;    
+}
+@media (max-width: 767px){
+	.slogan{		
+		margin: 67px auto 0px auto;
+	}
 }
 .content{
     text-align: center;
@@ -124,11 +140,11 @@ table {
     margin:0 62px 50px 62px;
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content:space-around; 
     color: #3D1101;
 }
 .food li{
-    max-width: 260px;
+    width: 260px;
 }
 .food img{
     border-radius: 180px;
@@ -140,9 +156,14 @@ table {
     
 }
 .food p{    
-    font-size: 16px;
-    
+    font-size: 16px;    
     text-align: left;
+}
+@media (max-width: 905px){
+    .food li{
+        max-width: 200px;
+        margin-top:30px;  
+     }
 }
 .chef{
     background: #3D1101;
@@ -166,7 +187,7 @@ table {
     max-width: 410px;
     text-align: left;
     color: #EFE9E7;
-    margin:81px 77px 80px 25px;
+    margin:81px auto 80px auto;
 }
 .chefq h3{
     font-size: 20px;
@@ -175,6 +196,17 @@ table {
 }
 .chefq p{
     font-size: 16px;       
+}
+@media (max-width:1025px){
+    .chefphoto{
+        margin-left: 10px;              
+
+               
+    }
+    .chefq{
+             
+        
+    }
 }
 .openassess{
     color: #3D1101;
@@ -188,18 +220,18 @@ table {
 }
 .assess ul{
     display: flex;
-    flex-wrap:wrap;
+    
 	justify-content: space-between;
 	padding: 0 42px;
 }
 .assess li{
     max-width: 32%;
     display: flex;    
+    flex-wrap:wrap;
     align-items: flex-start;
 }
 .assess img{    
-    border-radius: 67px;
-    max-width: 100%;
+    border-radius: 67px;   
     margin-right: 13px;
 }
 .assess div{
@@ -227,30 +259,33 @@ table {
     line-height: 1.5;
 }
 .mapbooking{
-    display: flex;
-    justify-content:center;
-    flex-wrap:nowrap;    
+	width: 100%;
+	display: flex;	
+	justify-content: center;	
+	overflow: hidden;    
 }
 .map{    
       background-image: url(../img/Map.png);
-      background-size: cover;
+      background-size:cover;
       background-repeat: no-repeat;
-      width: 462px;
-      height: 388px;
+      background-position: top left;
+      width: 100%; 
+      margin-left: 42px;     
 }
 .booking{ 
     margin-left: 20px;
     text-align: left;
     font-size: 14px;
     line-height: 1.5;
-    width: 470px;
+    width: 100%;
+    margin-right: 42px;
 }
 .booking form{
-    max-width: 470px;
+    width: 100%;;    
 }
 .booking input{
     width: 100%;
-	margin-bottom: 6px;	
+    margin-bottom: 6px;    
 	height:32px;
 	border: 1px solid #cccccc;
 	border-radius: 3px;
