@@ -79,8 +79,11 @@ table {
     color: #FFFFFF;
     font-weight:900;
 }
-.menu-pc{
-    margin-right: 48px;
+.menu-pc {
+    margin-right: 48px;  
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;      
 }
 .menu-pc a{
     margin-right: 30px;
@@ -91,6 +94,56 @@ table {
 }
 .menu-pc a:hover{
     border-bottom: 3px solid #efe9e7;    
+}
+.menu-mobile{
+    display: none;
+    background-image: url('../img/menu.png');
+    width: 32px;
+    height: 32px;
+}
+@media (max-width: 500px){
+    .menu-pc{
+		/*隱藏選單開始*/
+		max-height: 0;
+		overflow: hidden;
+		/*隱藏選單結束*/
+		/*漸變效果*/
+    	width: 100%;
+    	margin-top: 1px;
+    	/*絕對定位疊在網頁上*/
+    	position: absolute;
+    	/*權重*/
+    	z-index: 100;
+    	/*header 80px+1px boder 線條*/
+    	top: 50px;
+    	/* left:0 right:0表示滿版 */
+    	left: 0;
+   		right: 0;
+    	background: rgb(0, 0, 0);
+	}
+	.menu-pc li{
+        text-align: center;		
+        border-bottom: 1px dashed rgb(203, 223, 201);
+        width: 100%;
+	}	
+	.menu-pc li:hover{
+    	background: #69CA62;
+    	color: #fff;
+      }
+    .menu-pc a:hover{
+        border-bottom: 0px solid #efe9e7;    
+    }
+	.menu-mobile{
+        display: block; 
+        margin-right: 30px;
+        text-decoration:none;    
+        font-size: 16px;
+        color: #FFFFFF;          
+  	}
+  	/*jQuery點擊後動態在 body 加上 class */
+  	.menu-show .menu-pc{
+  		max-height: 500px;
+  	}
 }
 .slogan{
     margin: 67px auto 0px auto;
@@ -114,6 +167,11 @@ table {
 	.slogan{		
 		margin: 67px auto 0px auto;
 	}
+}
+@media (max-width: 400px){
+	.slogan h1{  
+        font-size: 28px;         
+    }
 }
 .content{
     text-align: center;
@@ -177,11 +235,8 @@ table {
     background-image: url(../img/main_chef_brown.png);    
     width: 470px;      
     height: 460px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-.chefphoto img{
-    max-width: 100%;
 }
 .chefq{
     max-width: 410px;
@@ -199,13 +254,33 @@ table {
 }
 @media (max-width:1025px){
     .chefphoto{
-        margin-left: 10px;              
+        margin-left: 10px;             
+    }
+}
+@media (max-width:890px){
 
-               
+    .chefphoto{
+        width: 373px;      
+        height: 460px;                          
     }
     .chefq{
-             
-        
+        max-width: 330px;
+        text-align: left;
+        color: #EFE9E7;
+        margin:81px auto 80px auto;
+    }
+}
+@media (max-width:890px){
+
+    .chefphoto{
+        max-width: 373px;      
+        max-height: 460px;                          
+    }
+    .chefq{
+        max-width: 330px;
+        text-align: left;
+        color: #EFE9E7;
+        margin:81px auto 80px auto;
     }
 }
 .openassess{
@@ -219,8 +294,8 @@ table {
     padding-top: 50px;
 }
 .assess ul{
-    display: flex;
-    
+    display: flex;    
+    flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0 42px;
 }
@@ -249,6 +324,13 @@ table {
     display: flex;    
     justify-content: flex-end; 
 }
+@media (max-width:480px){
+
+    .assess li{
+        max-width: 320px;
+        flex-wrap:nowrap;
+    }
+}
 .openmap{
     color: #3D1101;
     margin-bottom: 50px;
@@ -258,17 +340,17 @@ table {
     margin:50px auto 38px auto;
     line-height: 1.5;
 }
-.mapbooking{
-	width: 100%;
+.mapbooking{	
 	display: flex;	
-	justify-content: center;	
+    justify-content: space-between;    	
 	overflow: hidden;    
 }
 .map{    
       background-image: url(../img/Map.png);
-      background-size:cover;
+      background-size:contain;
       background-repeat: no-repeat;
-      background-position: top left;
+      background-position: top;
+      height: 386px;
       width: 100%; 
       margin-left: 42px;     
 }
@@ -310,6 +392,16 @@ table {
 }
 .booking .button:hover{
     background-color: #f56c32;
+}
+@media (max-width:768px){
+    .mapbooking{	
+        display: flex;
+        flex-wrap: wrap;	
+        justify-content: center;     
+    }
+    .map{
+        margin: 10px auto 10px auto;
+    }
 }
 .footer{    
     background: rgba(250, 250, 250, 0.377);
@@ -365,4 +457,14 @@ table {
     width: 31px;
     height: 36px;
     margin-left: 12px;    
+}
+@media (max-width:500px){
+.connection{
+    margin-top: 20px;
+}
+.footerlogo{
+    margin-top: 20px;
+    margin-right: 0px;    
+    margin-left: 65px;    
+}
 }
