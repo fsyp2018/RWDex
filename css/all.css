@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -98,6 +98,7 @@ table {
 .menu-mobile{
     display: none;
     background-image: url('../img/menu.png');
+    border-radius: 32px;
     width: 32px;
     height: 32px;
 }
@@ -109,6 +110,7 @@ table {
 		/*隱藏選單結束*/
 		/*漸變效果*/
     	width: 100%;
+	transition: max-height 1.0s;
     	margin-top: 1px;
     	/*絕對定位疊在網頁上*/
     	position: absolute;
@@ -127,6 +129,7 @@ table {
         width: 100%;
 	}	
 	.menu-pc li:hover{
+	    transition: all 1.0s;
     	background: #69CA62;
     	color: #fff;
       }
@@ -139,7 +142,10 @@ table {
         text-decoration:none;    
         font-size: 16px;
         color: #FFFFFF;          
-  	}
+      }
+     .menu-mobile:hover{
+        box-shadow: 0px 0px 15px rgba(201, 84, 84, 0.7);
+     } 
   	/*jQuery點擊後動態在 body 加上 class */
   	.menu-show .menu-pc{
   		max-height: 500px;
@@ -325,7 +331,6 @@ table {
     justify-content: flex-end; 
 }
 @media (max-width:480px){
-
     .assess li{
         max-width: 320px;
         flex-wrap:nowrap;
