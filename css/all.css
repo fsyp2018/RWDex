@@ -59,7 +59,7 @@ table {
     height: 420px;
     margin-bottom: 50px;       
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
 	.header{		
 		background-size: auto;
 		background-position: center;		
@@ -201,7 +201,7 @@ table {
     color: #FFFFFF;
     line-height: 24px;    
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
 	.slogan{		
 		margin: 67px auto 0px auto;
 	}
@@ -255,7 +255,7 @@ table {
     font-size: 16px;    
     text-align: left;
 }
-@media (max-width: 905px){
+@media (max-width: 768px){
     .food li{
         max-width: 200px;
         margin-top:30px;  
@@ -290,25 +290,7 @@ table {
 .chefq p{
     font-size: 16px;       
 }
-@media (max-width:1025px){
-    .chefphoto{
-        margin-left: 10px;             
-    }
-}
-@media (max-width:890px){
-
-    .chefphoto{
-        width: 373px;      
-        height: 460px;                          
-    }
-    .chefq{
-        max-width: 330px;
-        text-align: left;
-        color: #EFE9E7;
-        margin:81px auto 80px auto;
-    }
-}
-@media (max-width:890px){
+@media (max-width:768px){
 
     .chefphoto{
         max-width: 373px;      
@@ -362,7 +344,7 @@ table {
     display: flex;    
     justify-content: flex-end; 
 }
-@media (max-width:480px){
+@media (max-width:768px){
     .assess li{
         max-width: 320px;
         flex-wrap:nowrap;
@@ -495,15 +477,11 @@ table {
     height: 36px;
     margin-left: 12px;    
 }
-@media (max-width:500px){
-.connection{
-    margin-top: 20px;
-}
+@media (max-width:768px){
 .footerlogo{
     margin-top: 20px;
-    margin-right: 0px;    
-    margin-left: 65px;    
-}
+    margin-right: 0px;
+    }
 }
 #gotop {
     position: fixed;
@@ -525,10 +503,21 @@ table {
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
+@media (max-width:768px){
+    .shopping{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    }
 .foodmenu{
     margin: 0 50px 0 20px;
     width: 220px;
 }
+@media (max-width:768px){
+    .foodmenu{        
+        width: 80%;        
+    }
+    }
 .foodtitle{
     display: flex;
     flex-wrap: nowrap;      
@@ -562,6 +551,7 @@ table {
     font-size: 16px;  
     color: #3D1101;
 }
+
 .foodsearch{
     width: 100%;
     display: flex;    
@@ -613,4 +603,152 @@ table {
 	color: #ffffff;
 	background-color: #ff0000;
 	border-radius: 180px;  
+}
+@media (max-width:768px){
+    .shoppingcar{
+        margin: 22px 0 0 20px;        
+    } 
+    .foodsearch{
+        justify-content: center;
+    }
+    .foodsearch .fs{
+        width: 25%;
+    }
+    .foodsearch .sbimg{
+        margin-right: 10%;
+    }
+}
+.foodmenusel{
+    margin-top: -4px;
+    margin-bottom: 30px; 
+    color: #3D1101;  
+}
+.foodmenusel ul{    
+    display: flex;
+    flex-wrap: wrap;  
+}
+@media(max-width:768px){
+    .foodmenusel ul{   
+        justify-content: center;  
+    } 
+}
+.foodmenusel li{
+    width: 220px;
+    height: 280px;
+    margin: 30px 10px 0 10px;
+    box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+    display:flex;
+    flex-wrap: wrap;  
+    justify-content:center;
+}
+.foodmenusel img{
+    width: 220px;    
+}
+.foodmenusel p{
+    font-size: 20px;
+    width: 100%;    
+}
+.foodmenusel span{
+    font-size: 12px; 
+    width: 100%;    
+}
+.foodmenusel li>p:nth-child(4){
+	width: 91px;
+	border-top: 1px solid #3d1101;
+	padding: 13px 0 13px 0;
+}
+.foodmenusel a{
+	display: block;
+    width: 200px;
+    height: 28px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #ff5e45;    
+    border: 2px solid #ff5e45;
+    padding: 1px 0 1px 0;
+}
+.foodmenusel a:hover{
+	background-color: #ff5e45;
+	color: #ffffff;
+}
+.foodmenusel a>img{	
+    width: 13px;
+    height: 14px;
+    margin: 0 2px 0 0;    
+}
+
+/* 註冊頁面 */
+.reg{
+    color: #3D1101;
+
+}
+.reg p{
+    font-size: 48px;
+}
+.reg span{
+    font-size: 20px;
+}
+.regbor{
+    border-top: 2px solid #ff5e45;
+    width: 620px;
+    margin: 35px auto 35px auto;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16); 
+}
+.regbor>p:nth-child(1){
+    font-size: 18px;
+}
+.regform{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    margin: 16px;   
+    
+}
+@media(max-width:768px){
+    .regform{        
+        flex-wrap: wrap;
+        justify-content: center;           
+    }
+}
+.regform p{
+    font-size: 18px;
+    width: 285px;   
+    text-align: left;
+    line-height: 1.5;
+    margin: 0 20px 0 15px;
+}
+.regisiter{
+    width: 100%;
+    margin: 0 20px 0 0;
+    
+}
+.regisiter input{
+    width: 100%;
+    margin-bottom: 6px;    
+	height:32px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+    padding: 0 14px;    
+}
+.regisiter span{
+    font-size: 16px;    
+    float: left;
+    line-height: 1.5;
+}
+.regform a{
+    font-size: 14px;    
+    float: left;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #3d1101;
+}
+.submitbuttom{
+	max-width: 125px;
+	height: 32px;
+	float: right;
+	margin-top: 49px;
+	margin-bottom: 0;
+	color: #ffffff;
+	background-color: #f56c23;
+	padding: 0;
 }
