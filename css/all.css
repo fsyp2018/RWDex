@@ -704,12 +704,6 @@ table {
     margin: 16px;   
     
 }
-@media(max-width:768px){
-    .regform{        
-        flex-wrap: wrap;
-        justify-content: center;           
-    }
-}
 .regform p{
     font-size: 18px;
     width: 285px;   
@@ -717,6 +711,18 @@ table {
     line-height: 1.5;
     margin: 0 20px 0 15px;
 }
+@media(max-width:768px){
+    .regbor{    
+        width: 85%;  
+    }    
+    .regform{        
+            flex-wrap: wrap;
+            justify-content: center;           
+        }
+        .regform p{
+            width: 90%;
+        }
+    }
 .regisiter{
     width: 100%;
     margin: 0 20px 0 0;
