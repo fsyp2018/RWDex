@@ -591,7 +591,7 @@ table {
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: center center;
-    text-decoration: none;
+    text-decoration: none;    
 }
 .foodsearch .nub{
 	position: relative;
@@ -622,10 +622,12 @@ table {
     margin-top: -4px;
     margin-bottom: 30px; 
     color: #3D1101;  
+
 }
 .foodmenusel ul{    
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+
 }
 @media(max-width:768px){
     .foodmenusel ul{   
@@ -640,9 +642,69 @@ table {
     display:flex;
     flex-wrap: wrap;  
     justify-content:center;
+    position: relative;  
+    z-index: 10;
 }
-.foodmenusel img{
-    width: 220px;    
+.foodmenusel .like {    
+    position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 15;    
+    padding: 2px;
+    line-height: 0px;        	    
+}
+.foodmenusel .like img{  
+    width: 20px;
+    height: 20px;      	    
+}
+.foodmenusel .like.sellike{    
+    border-radius: 20px;
+    background-color: pink;       	    
+}
+.foodmenusel .ribbonwrap{    
+	width: 116px;
+	height: 112px;
+	overflow: hidden;
+	position: absolute;
+	right: -8px;
+	top: -6px;
+	z-index: 20;
+}
+.foodmenusel .ribbon{
+	position: absolute;	
+    top: 20px;
+	z-index: inherit;
+	width: 150px;
+	height: 30px;
+	background-color: #00cc99;
+	color: #ffffff;	
+	line-height: 28px;	
+	font-size: 14px;	
+	font-weight: bold;
+	padding-left: 8px;
+	transform: rotate(45deg);
+}
+.foodmenusel .ribbon::before{
+    content: "";
+    border-top: 5px solid #074034;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    height: 30px;
+	left: 16px;
+	top: 30px;
+}
+.foodmenusel .ribbon::after{
+    content: "";
+    border-top: 6px solid #074034;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+	position: absolute;
+	right: 10px;
+	bottom: -6px;
+}
+.foodmenusel li img{
+    width: 220px;   
 }
 .foodmenusel p{
     font-size: 20px;
@@ -652,10 +714,10 @@ table {
     font-size: 12px; 
     width: 100%;    
 }
-.foodmenusel li>p:nth-child(4){
+.foodmenusel li>p:nth-child(6){
 	width: 91px;
 	border-top: 1px solid #3d1101;
-	padding: 13px 0 13px 0;
+	padding: 13px 0 0 0;
 }
 .foodmenusel a{
 	display: block;
@@ -666,6 +728,8 @@ table {
 	color: #ff5e45;    
     border: 2px solid #ff5e45;
     padding: 1px 0 1px 0;
+    margin: 0 0 5px 0;
+    
 }
 .foodmenusel a:hover{
 	background-color: #ff5e45;
@@ -696,6 +760,7 @@ table {
 }
 .regbor>p:nth-child(1){
     font-size: 18px;
+    padding: 10px 0 0 0;
 }
 .regform{
     display: flex;

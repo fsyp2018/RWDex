@@ -29,5 +29,8 @@ $(document).ready(function() {
 			$('#gotop').stop().fadeOut("fast");
 		}
 	});
+	$(".like").click(function(){
+		$(this).toggleClass("sellike");
+	})
 
   });
